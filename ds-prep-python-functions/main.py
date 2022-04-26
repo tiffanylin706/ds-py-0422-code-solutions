@@ -13,23 +13,23 @@ def cube (base):
 print  (cube(3))
 print  (cube(5))
 
-def absolute_difference (a, b) :
-  return abs ( a,b )
-print ("absolute difference:", (abs (14-11)))
-print ("absolue difference:", (abs (13-40)))
+def absolute_difference (a,b) :
+  return abs ( a-b )
+print ("absolute difference:", absolute_difference (14,11))
+print ("absolue difference:", absolute_difference (13,40))
 
 def squared_difference (a, b):
-  return ((abs (a,b))**2)
-print ("square_difference:", ((abs(14,11))**2))
+  return ((abs (a-b))**2)
+print ("square_difference:", squared_difference (14,11))
 
 def hours_to_minutes (hours):
   return (hours*60)
-print ("hours_to_minutes:", hours_to_minutes= 3.5)
-print ("hours_to_minutes:", hours_to_minutes= 12)
+print ("hours_to_minutes:", hours_to_minutes ( hours = 3.5))
+print ("hours_to_minutes:", hours_to_minutes ( hours = 12))
 
 def get_circumference (radius):
   return (radius* 6.283185307179586)
-print ("get_circumference:", get_circumference= 9.2)
+print ("get_circumference:", get_circumference (radius = 9.2))
 
 def linear_transform (x, slope, intercept):
   return (x*slope)+intercept
