@@ -12,14 +12,17 @@ is_male= "male" in passenger
 print ("is_male:", is_male)
 
 
-(id, survived, name, gender, age)= passenger
-new_passenger = (age, gender, survived)
 def get_survival_info (passenger):
-  return (new_passenger)
+  (id, survived, name, gender, age)= passenger
+  passenger = (age, gender, survived)
+  return (passenger)
 print (get_survival_info (passenger))
 
-passenger_1= (11, True, "Sandstrom, Miss. Marguerite Rut", "female", 4)
-passenger_2= (28, False, "Fortune, Mr. Charles Alexander", "male", 19)
-passenger_3= (51, False, "Panula, Master. Juha Niilo", "male", 7)
+passenger = (11, True, "Sandstrom, Miss. Marguerite Rut", "female", 4)
+print(get_survival_info(passenger))
 
-print (get_survival_info (passenger)+ passenger_1+ passenger_2+ passenger_3)
+passenger = (28, False, "Fortune, Mr. Charles Alexander", "male", 19)
+print(get_survival_info(passenger))
+
+passenger = (51, False, "Panula, Master. Juha Niilo", "male", 7)
+print(get_survival_info(passenger))
