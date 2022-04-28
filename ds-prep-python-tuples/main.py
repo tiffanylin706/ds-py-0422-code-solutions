@@ -1,7 +1,9 @@
 passenger=(12, True, "Bonnell, Miss. Elizabeth", "female", 58)
 print (passenger)
-name= print ("name:",(passenger[2]))
-age= print("age:", (passenger[-1]))
+name= (passenger[2])
+print ("name:",(name))
+age= (passenger[-1])
+print("age:", age)
 survived_and_name= passenger[1:3]
 gender_and_age= passenger[3:]
 print ("survived_and_name:", survived_and_name, "gender_and_age:", gender_and_age)
